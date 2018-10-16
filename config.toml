@@ -1,4 +1,4 @@
-baseURL = "https://bubbuls.github.io/"
+baseURL = "https://KevinALBRECHT.github.io/"
 languageCode = "fr-fr"
 title = "Kevin ALBRECHT"
 theme = "hyde-hyde"
@@ -46,6 +46,6 @@ disqusShortname = "kalbrecht-blog"
 
 		[params.social]
 		twitter = "kalbrecht_fr"
-		github = "Bubbuls"
+		github = "KevinALBRECHT"
 		linkedin = "albrechtkevin/"
 		email = "kevin-albrecht@outlook.fr"
