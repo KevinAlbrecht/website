@@ -1,0 +1,77 @@
+html,
+body
+{
+    font-family: roboto, 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.img-circle
+{
+    border-radius: 50%;
+}
+
+.headshot
+{
+    width: 115px;
+    height: 115px;
+}
+
+.brand
+{
+    font-size: 2.6em;
+
+    margin-bottom: 0;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.meta
+{
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+/*pre
+{
+    padding: 1px;
+
+    tab-size: 2;
+}*/
+
+
+.hljs {
+    white-space: pre;    
+    overflow-x: auto; /* no line wrapping */
+}
+
+pre{
+        white-space: pre;
+}
+
+.copyright, 
+.poweredby
+{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+a, a.meta{
+font-weight: 700 !important;
+}
+
+.center
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Changing from font-awesome 4 to 5, the class pull-right was removed */
+.pull-right {
+    float: right;
+}

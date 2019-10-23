@@ -1,0 +1,38 @@
+{{ define "header" -}}
+  {{ partial "header.html" . }}
+{{- end }}
+
+{{ define "content" -}}
+  <div class="posts">
+  {{ range (where .Data.Pages "Type" "!=" "about").GroupBy "Section" }}
+    {{ range .Pages }}
+      <div class="post">
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }}<sup><i class="fas fa-pen-square fa-xs"></i></sup>{{ end }}</h2>
+        <span class="post-date">
+          {{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}
+          <!-- tag-->
+          {{ with .Params.tags }}
+          {{ $total := len . }}
+          {{ if gt $total 0 }}
+            {{ $subtotal := sub $total 1 }} <i class="fas fa-tags"></i>
+            {{ range $i, $tag := sort . }}
+            <a class="meta" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a> {{ if lt $i $subtotal }} | {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ end }}
+          <!-- tag -->
+        </span>
+        {{  .Summary }}
+        {{ if .Truncated }}…
+        <div class="read-more-link">
+            <a href="{{ .RelPermalink }}">Lire l'article</a>
+        </div>
+        {{ end }}
+        </div>
+     {{- end -}}
+  {{- end }}
+  </div>
+{{- end }}
+
+{{ define "footer" -}}
+{{- end }}

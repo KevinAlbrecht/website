@@ -1,0 +1,15 @@
+{{ define "header" -}}
+    {{ partial "header.html" . }}
+{{- end -}}
+
+{{ define "content" -}}
+{{if eq .Params.type "about"}}
+   {{ partial "content_about.html" . }}
+{{else}}
+    {{ partial "content_single.html" . }}
+{{end}}
+{{- end -}}
+
+{{ define "footer" -}}
+    {{ partial "commenting.html" . }}
+{{- end -}}
