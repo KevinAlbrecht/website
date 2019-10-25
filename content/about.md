@@ -1,26 +1,32 @@
 ---
 {
 	"title": "A propos de moi",
-	"type":"about",
-   	draft: true
+	"type": "about",
+	draft: true,
+	js: [
+		{ isAbsolute: true, src: "https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.7.1/p2.min.js"},
+		{ isAbsolute: false, src: "../p2script.js" }
+	]
 }
 ---
+<style type="text/css">
+object{
+	height:90vh;
+}</style>
+<!-- <canvas width="600" height="400" id="title"></canvas> -->
+___
 
-<canvas width="600" height="400" id="title"></canvas>
+Développeur Full stack avec 6 ans d'expérience, je suis particulièrement attiré par les technologies Microsoft et principalement Web: C#, asp.net core, plateforme Azure ... Je suis aussi très intéressé par Les technos Front, Angular, un peu de react , architecture Redux et Cordova... 
 
-Passionné de développement, plutôt orienté front-end avec Typescript, Angular, ionic, Cordova. Je travail aussi principalent avec les technologies Microsoft telles le c#, asp.net & asp.net core, Microsoft Azure et MS SQL server.
+J'ai animé 3 Formations via la société ORSYS sur Cordova, participé à 2 livres blanc et une publication dans le magazine "Programmez" sur le sujet des technologies d'applications Cross-plateform.
+  
+Poste actuel : Consultant Fullstack chez [Infinitesquare](https://infinitesquare.com/).
 
-Experience
----
+___
 
- * D'Avril 2014 jusqu'à maintenant : Consultant chez Infinitesquare
- * De Juillet 2013 à Avril 2014 : Stagiraire chez Infinitesquare
- * Avant : 12 mois de stages ( cumulés en 4 ans d'études ), missions types : 
-     * Création de SPA avec knockout
-     * Création de web api asp.net mvc3 & mvc 4
-     * Developpement MVVM c#
-     * Creation de site de CE en php
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.7.1/p2.min.js"></script>
-
-     <script src="../p2script.js"></script>
+<p>Mon CV :</p>
+<object data="/documents/KevinAlbrechtCV.pdf" type="application/pdf" width="700px">
+    <embed src="/documents/KevinAlbrechtCV.pdf">
+        <a href="/documents/KevinAlbrechtCV.pdf">KevinAlbrechtCV.pdf</a>
+    </embed>
+</object>

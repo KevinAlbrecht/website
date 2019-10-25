@@ -1,81 +1,86 @@
-a{
-  color:#15631e;
+a {
+    color: #15631e;
 }
 
 .posts .post .meta,
-.posts .post .read-more-link{
-  font-weight: 600;
-  font-family: Arial
+.posts .post .read-more-link {
+    font-weight: 600;
+    font-family: Arial
 }
 
-.sidebar .sidebar-bottom{
-	text-align: center;
-	top:initial;
-	bottom:1em;
+.sidebar .sidebar-bottom {
+    text-align: center;
+    top: initial;
+    bottom: 1em;
 }
 
-.sidebar { /*from hyde*/
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: #0c250f;
+.sidebar {
+    /*from hyde*/
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255, 255, 255, .5);
+    background-color: #0c250f;
 }
 
 .sidebar .sidebar-nav li {
-text-align: left;
+    text-align: left;
 }
 
-a:hover, a:focus { /*from poole*/
+a:hover,
+a:focus {
+    /*from poole*/
     text-decoration: none;
 }
 
-.headshot { /*from custom*/
+.headshot {
+    /*from custom*/
     width: 160px;
     height: 160px;
 }
 
-.tech-list{
-  text-align: left;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0;
+.tech-list {
+    text-align: left;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
 }
 
-.tech-list li{
-  list-style-type: none;
-  text-align: left;
+.tech-list li {
+    list-style-type: none;
+    text-align: left;
 }
 
-tech-list li{
-  text-indent: 10px;
-/*.content:"#";*/
+tech-list li {
+    text-indent: 10px;
+    /*.content:"#";*/
 }
 
 .sidebar .container .lead {
-  margin-bottom: 0;
-  margin-top: 1rem;
-  text-align: left;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .sidebar .container .lead span {
-  text-align: left;
-  display: inline-block;
-  font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    color: white;
 }
 
-.sidebar .container .lead-second a{
-color: rgb(255,255,255);
-text-decoration: underline;
-text-align: left;
-font-size: 13px;
+.sidebar .container .lead-second a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-align: left;
+    font-size: 13px;
 }
 
-@media (min-width: 78em){
-  .content{
-    max-width: 63em;
-    margin: 0;
-    margin:auto;
+@media (min-width: 78em) {
+    .content {
+        max-width: 63em;
+        margin: 0;
+        margin: auto;
         padding-left: 18rem;
-  }
+    }
 }

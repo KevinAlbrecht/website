@@ -10,16 +10,16 @@ disqusShortname = "kalbrecht-blog"
 		    pre = "<i class='fa fa-list-ul'></i>"
 		    url = "/"
 		    weight = -10
-#		[[menu.main]]
-#			identifier = "about"
-#			name = "A propos de moi"
-#			pre = "<i class='fa fa-user'></i>"
-#			url = "/about/"
-#			weight = -9
+		[[menu.main]]
+			identifier = "about"
+			name = "A propos de moi"
+			pre = "<i class='fa fa-user'></i>"
+			url = "/about/"
+  			weight = -9
 
 	[params]
 	authorimage ="/author.jpg"
-	description = "Développeur web"
+	description = "Développeur Fullstack"
 	at = "@Infinitesquare"
 	atlink = "https://infinitesquare.com/"
 	dateformat = "02/01/2006"
@@ -48,4 +48,4 @@ disqusShortname = "kalbrecht-blog"
 		twitter = "kalbrecht_fr"
 		github = "KevinALBRECHT"
 		linkedin = "albrechtkevin/"
-		email = "kevin-albrecht@outlook.fr"
+		email = "kevin.albrecht@outlook.fr"
