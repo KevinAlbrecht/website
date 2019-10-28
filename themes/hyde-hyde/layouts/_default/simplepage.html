@@ -3,9 +3,8 @@
 {{- end -}}
 
 {{ define "content" -}}
-{{ partial "content_single.html" . }}
+{{ partial "content_about.html" . }}
 {{- end -}}
-
 {{ define "footer" -}}
 {{- range .Params.js}}
 {{if .isAbsolute}}
@@ -14,5 +13,4 @@
 <script src="./{{ .src }}"></script>
 {{end}}
 {{- end}}
-{{ partial "commenting.html" . }}
 {{- end -}}

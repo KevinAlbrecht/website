@@ -16,7 +16,6 @@ a {
 
 .sidebar {
     /*from hyde*/
-    text-align: center;
     padding: 2rem 1rem;
     color: rgba(255, 255, 255, .5);
     background-color: #0c250f;
@@ -24,6 +23,16 @@ a {
 
 .sidebar .sidebar-nav li {
     text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.sidebar .sidebar-nav li:hover {
+    text-decoration: underline;
+}
+
+.sidebar .sidebar-nav li a svg {
+    margin-right: 10px;
 }
 
 a:hover,
@@ -59,20 +68,22 @@ tech-list li {
 .sidebar .container .lead {
     margin-bottom: 0;
     margin-top: 1rem;
-    text-align: center;
+
 }
 
 .sidebar .container .lead span {
-    text-align: center;
     display: inline-block;
     font-size: 24px;
     color: white;
 }
 
+.sidebar .container .lead-second {
+    text-align: left;
+}
+
 .sidebar .container .lead-second a {
     color: rgb(255, 255, 255);
     text-decoration: underline;
-    text-align: left;
     font-size: 13px;
 }
 
@@ -83,4 +94,13 @@ tech-list li {
         margin: auto;
         padding-left: 18rem;
     }
+}
+
+.sidebar-about h1 {
+    text-align: initial;
+}
+
+.sidebar-about h1.brand {
+    text-align: center;
+    font-size: 20px;
 }

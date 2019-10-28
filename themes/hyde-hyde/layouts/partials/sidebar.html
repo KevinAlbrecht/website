@@ -1,53 +1,45 @@
 <div class="sidebar">
-	<div class="container text-center sidebar-sticky">
-		<div class="sidebar-about text-center">
-			{{ with .Site.Params.authorimage }} <img src="{{.}}" alt="Author Image" class="img-circle headshot center"> {{ end }}
-			<a href="{{ .Site.BaseURL }}"><h1 class="brand">{{ .Site.Title }}</h1></a>
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+			<a href="{{ .Site.BaseURL }}">
+				<h1 class="brand">{{ .Site.Title }}</h1>
+			</a>
+			{{ with .Site.Params.authorimage }} <img src="{{.}}" alt="Author Image" class="img-circle headshot center">
+			{{ end }}
 			<p class="lead">
 				<span>
 					{{ with .Site.Params.description }} {{.}} {{end}}
 				</span>
 				<span class="lead-second">
 					<a href='{{ .Site.Params.atlink }}' target="_blank">
-					{{ .Site.Params.at }}
-				</a>
+						{{ .Site.Params.at }}
+					</a>
 				</span>
 			</p>
-			<ul class="tech-list">
-				
-				{{range .Site.Params.technos}}
-				<li>
-					<i class='{{.preclass}}'></i>
-					{{.title}}
-				</li>
-				{{end}}
-			</ul>
 		</div>
 		{{ partial "sidebar_menu.html" . }}
-			<p id="niconico"></p>
-        <p>
-		{{ partial "sidebar_social.html" . }}
-        </p>
-	</div>
-	<div>
+			{{ partial "sidebar_social.html" . }}
 	</div>
 	<div class="sidebar-sticky sidebar-bottom">
-		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}} {{.Site.Params.author}}.
-        <a href="https://creativecommons.org/licenses/by/4.0">Some Rights Reserved</a>.<br/>Built with <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.{{end}}
-        </p>
+		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}
+			{{.Site.Params.author}}.
+			<a href="https://creativecommons.org/licenses/by/4.0">Some Rights Reserved</a>.<br />Built with <a
+				href="https://gohugo.io/">Hugo</a> &amp; <a
+				href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.{{end}}
+		</p>
 	</div>
 </div>
 <script>
 	var el = document.getElementById("niconico");
-	console.log("el",el);
-	var baseUri = {{.Site.Params.niconico.baseuri}};
+	console.log("el", el);
+	var baseUri = {{.Site.Params.niconico.baseuri }};
 	var extension = ".gif";
-	var list = {{.Site.Params.niconico.ids}};
+	var list = {{.Site.Params.niconico.ids }};
 	function getIndex(max) {
 		return Math.floor(Math.random() * Math.floor(max));
 	}
-	var index = getIndex(list.length-1);
-	var content = "<img style='display:inline' src='"+baseUri+list[index]+extension+"' />"
+	var index = getIndex(list.length - 1);
+	var content = "<img style='display:inline' src='" + baseUri + list[index] + extension + "' />"
 	el.innerHTML = content;
 </script>
 <img src="">

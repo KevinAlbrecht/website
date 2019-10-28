@@ -1,12 +1,13 @@
 {{ define "header" -}}
 {{ partial "header.html" . }}
 {{- end }}
-
 {{ define "content" -}}
 <div class="posts">
-	{{ range (where .Data.Pages "Type" "!=" "about").GroupBy "Section" }}
-	{{ range .Pages }}
+	{{ $postsPages := where $.Site.Pages "Section" "posts" }}
+	{{ range  $postsPages }}
+	{{if .Summary}}
 	<div class="post">
+		{{.Data.tags}}
 		<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }}<sup><i
 					class="fas fa-pen-square fa-xs"></i></sup>{{ end }}</h2>
 		<span class="post-date">
@@ -31,8 +32,8 @@
 		</div>
 		{{ end }}
 	</div>
-	{{- end -}}
-	{{- end }}
+	{{ end }}
+	{{ end }}
 </div>
 {{- end }}
 

@@ -3,21 +3,22 @@
 	<ul class="sidebar-nav">
 		{{ $currentPage := . }}
 		{{ range .Site.Menus.main -}}
-			{{ if .HasChildren -}}
-			<li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-				<a href="#">{{ .Pre }}<span>{{ .Name }}</span></a>
-				<ul class="sidebar-nav">
-					{{ range .Children -}}
-						<li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-							<a href="{{ .URL }}">{{ .Name | title }}</a>
-						</li>
-					{{- end -}}
-				</ul>
-			{{- else -}} <!-- No Children-->
-				<li>
-					<a href="{{.URL}}">{{ .Pre }} <span>{{ .Name | title }}</span></a>
+		{{ if .HasChildren -}}
+		<li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+			<a href="#">{{ .Pre }}<span>{{ .Name }}</span></a>
+			<ul class="sidebar-nav">
+				{{ range .Children -}}
+				<li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+					<a href="{{ .URL }}">{{ .Name | title }}</a>
 				</li>
-			{{- end -}}
+				{{- end -}}
+			</ul>
+			{{- else -}}
+			<!-- No Children-->
+		<li>
+			<a href="{{.URL}}">{{ .Pre }} <span>{{ .Name | title }}</span></a>
+		</li>
+		{{- end -}}
 		{{- end }}
 		</li>
 	</ul>

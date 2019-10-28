@@ -4,6 +4,10 @@ title = "Kevin ALBRECHT"
 theme = "hyde-hyde"
 googleAnalytics = "UA-118690818-1"
 disqusShortname = "kalbrecht-blog"
+	[permalinks]
+		posts= "/:section/:slug"
+		about="/:title"
+		home="/posts"
 	[menu]
 		[[menu.main]]
 		    name = "Blog posts"
@@ -12,9 +16,9 @@ disqusShortname = "kalbrecht-blog"
 		    weight = -10
 		[[menu.main]]
 			identifier = "about"
-			name = "A propos de moi"
+			name = "A propos"
 			pre = "<i class='fa fa-user'></i>"
-			url = "/about/"
+			url = "/a-propos"
   			weight = -9
 
 	[params]

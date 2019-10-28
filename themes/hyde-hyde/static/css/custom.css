@@ -69,3 +69,12 @@ a.meta {
 .pull-right {
     float: right;
 }
+
+
+#niconico {
+    text-align: center;
+}
+
+.social {
+    margin-top: 20px;
+}
