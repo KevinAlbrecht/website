@@ -15,10 +15,9 @@ disqusShortname = "kalbrecht-blog"
 		    url = "/"
 		    weight = -10
 		[[menu.main]]
-			identifier = "about"
 			name = "A propos"
 			pre = "<i class='fa fa-user'></i>"
-			url = "/a-propos"
+			url = "/about"
   			weight = -9
 
 	[params]

@@ -3,7 +3,7 @@
 	"title": "A propos",
 	"type": "singles",
 	"layout":"simplepage",
-	draft: true,
+	draft: false,
 	js: [
 		{ isAbsolute: true, src: "https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.7.1/p2.min.js"},
 		{ isAbsolute: false, src: "../p2script.js" }
