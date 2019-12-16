@@ -16,15 +16,17 @@ object{
 }</style>
 <!-- <canvas width="600" height="400" id="title"></canvas> -->
 ___
-Full Stack Developer with 6 years of experience, je suis particulièrement attiré par les technologies Microsoft et principalement Web: C#, asp.net core, plateforme Azure ... Je suis aussi très intéressé par Les technos Front, Angular, RxJS,  un peu de react , architecture Redux et Cordova... 
+Full Stack Developer with 6 years of experience, focused on Microsoft technologies: C#,
+.net core, Azure platform, and then Angular, RxJS, Cordova and a bit of React for Front-End. I enjoy working in
+a team and share experience.
 
-J'ai animé 3 Formations via la société ORSYS sur Cordova, participé à 2 livres blanc et une publication dans le magazine "Programmez" sur le sujet des technologies d'applications Cross-plateform.
+3 Formations leaded about Cordova, participation to 2 white papers for Microsoft Days and
+one publication in the “Programmez” magazine about Cross-platform technologies.
   
-Poste actuel : Consultant Fullstack chez <a href="https://infinitesquare.com/" target="_blank">Infinite Square</a>. 
-
+Present job :  Fullstack consultant at <a href="https://infinitesquare.com/" target="_blank">Infinite Square</a>. 
 ___
 
-<p>Mon CV :</p>
+<p>My resume :</p>
 <object data="/documents/KevinAlbrechtCV-EN.pdf" type="application/pdf" width="700px">
     <embed src="/documents/KevinAlbrechtCV-EN.pdf">
         <a href="/documents/KevinAlbrechtCV-EN.pdf">KevinAlbrechtCV.pdf</a>

@@ -1,15 +1,16 @@
 baseURL = "https://KevinALBRECHT.github.io/"
 languageCode = "fr-fr"
 DefaultContentLanguage = "en"
-
 theme = "hyde-hyde"
 googleAnalytics = "UA-118690818-1"
 disqusShortname = "kalbrecht-blog"
 	[languages]
 		[languages.en]
-			title = "en Kevin ALBRECHT"
+			title = "Kevin ALBRECHT"
+			description="Fullstack developer"
 		[languages.fr]
-			title = "fr Kevin ALBRECHT"
+			title = "Kevin ALBRECHT"
+			description="Développeur Fullstack"
 	[permalinks]
 		posts= "/:section/:slug"
 		about="/:title"
@@ -21,14 +22,13 @@ disqusShortname = "kalbrecht-blog"
 		    url = "/"
 		    weight = -10
 		[[menu.main]]
-			name = "A propos"
+			name = "About"
 			pre = "<i class='fa fa-user'></i>"
 			url = "/about"
   			weight = -9
 
 	[params]
 	authorimage ="/author.jpg"
-	description = "Développeur Fullstack"
 	at = "@Infinitesquare"
 	atlink = "https://infinitesquare.com/"
 	dateformat = "02/01/2006"
