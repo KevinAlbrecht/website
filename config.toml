@@ -1,9 +1,15 @@
 baseURL = "https://KevinALBRECHT.github.io/"
 languageCode = "fr-fr"
-title = "Kevin ALBRECHT"
+DefaultContentLanguage = "en"
+
 theme = "hyde-hyde"
 googleAnalytics = "UA-118690818-1"
 disqusShortname = "kalbrecht-blog"
+	[languages]
+		[languages.en]
+			title = "en Kevin ALBRECHT"
+		[languages.fr]
+			title = "fr Kevin ALBRECHT"
 	[permalinks]
 		posts= "/:section/:slug"
 		about="/:title"

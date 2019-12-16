@@ -1,6 +1,6 @@
 ---
 {
-	"title": "Utiliser un certificat d’entreprise pour un package Windows pour Cordova",
+	"title": "Use enterprise certificate for windows Cordova package",
    	"date": "2016-02-11",
    	"description": "En ce qui concerne les application pour la plateforme Windows, il peut arriver même lors de phases de recettes d’avoir à utiliser un certificat Entreprise, sauf que contrairement à un projet d’application Windows 8.1/10, nous ne disposons pas de simple bouton pour importer un certificat...",
    	"tags": [
@@ -10,7 +10,7 @@
    	],
 }
 ---
-
+EN
 En ce qui concerne les application pour la plateforme Windows, il peut arriver même lors de phases de recettes d’avoir à utiliser un certificat Entreprise, sauf que contrairement à un projet d’application Windows 8.1/10, nous ne disposons pas de simple bouton pour importer un certificat.
 
 La tâche est très simple mais juste un peu plus longue que pour les applications traditionnelles, voilà les étapes de packaging:
