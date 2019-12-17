@@ -1,5 +1,4 @@
 baseURL = "https://KevinALBRECHT.github.io/"
-languageCode = "fr-fr"
 DefaultContentLanguage = "en"
 theme = "hyde-hyde"
 googleAnalytics = "UA-118690818-1"

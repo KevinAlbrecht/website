@@ -2,7 +2,7 @@
 {
 	"title": "Use enterprise certificate for windows Cordova package",
    	"date": "2016-02-11",
-   	"description": "En ce qui concerne les application pour la plateforme Windows, il peut arriver même lors de phases de recettes d’avoir à utiliser un certificat Entreprise, sauf que contrairement à un projet d’application Windows 8.1/10, nous ne disposons pas de simple bouton pour importer un certificat...",
+   	"description": "Dealing with windows applications you may have to use enterprise certificate but unlike simple Windows 8.1/10 app, in Cordova we can't just press a button to import a certificate...",
    	"tags": [
       "Windows",
       "Cordova",
@@ -10,35 +10,32 @@
    	],
 }
 ---
-EN
-En ce qui concerne les application pour la plateforme Windows, il peut arriver même lors de phases de recettes d’avoir à utiliser un certificat Entreprise, sauf que contrairement à un projet d’application Windows 8.1/10, nous ne disposons pas de simple bouton pour importer un certificat.
+Dealing with windows applications you may have to use enterprise certificate but unlike simple Windows 8.1/10 app, in Cordova we can't just press a button to import a certificate.
 
-La tâche est très simple mais juste un peu plus longue que pour les applications traditionnelles, voilà les étapes de packaging:
+The task il simple but just a bit longer than traditional native apps here is the process :
 
-Première étape: Installer et ajouter le certificat
+First: Install and add the certificate.
 --------------------------------------------------
 
-En effet il est nécessaire d’installer le certificat, lorsque vous êtes sur les options d’installation, pensez à bien sélectionner l’utilisateur courant puis le magasin“Personnel” pour éviter toute erreur lors de la build, puis ajoutez le certificat dans le dossier de ressources native.
+Indeed you have to install the certificate, when you are at the installation options, don't forget to select the current user then the "personal store" to avoid issues at the build. Then add the certificate in the native resources folder.
 
 ![result image](/cert_6B272457.png)
 
-2eme étape : récupérer le Thumbprint
+Second : thet the Thumbprint
 ------------------------------------
 
-Il faut renseigner le Thumbprint du certificat, pour le trouver il vous suffit d’ouvrir PowerShell et d’exécuter la commande suivante :
+You have to give the Thumbprint, to find it, open PowerShell and execute the following :
 
 **Get-ChildItem -path cert:\LocalMachine\My**
 
-Et voila le résultat, vous allez pouvoir récupérer le thumbprint correspondant.
-
 ![result image](/cert_6717AA8B.png)
 
-3eme étape : Configurer les informations de build
+Third : Configure build informations
 ---
 
-Allons maintenant remplir le fichier build.json qui se trouve à la racine de votre projet.
+We'll now fill the build.json file in the root of your project.
 
-Celui-ci doit contenir les information de build suivant la plateforme et l’état de release ou debug
+It may already contains the following build information in depending on platform and the release/debug state.
 
 ```javascript
 {
@@ -52,4 +49,4 @@ Celui-ci doit contenir les information de build suivant la plateforme et l’ét
 }
 ```
 
-Fin, vous pouvez maintenant build en release et faire votre petit click droit “Create App Package”.
+Voila, you are now able to build in release and use the “Create App Package” option.
