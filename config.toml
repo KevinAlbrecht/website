@@ -7,9 +7,15 @@ disqusShortname = "kalbrecht-blog"
 		[languages.en]
 			title = "Kevin ALBRECHT"
 			description="Fullstack developer"
+			languageName = "English"
 		[languages.fr]
 			title = "Kevin ALBRECHT"
 			description="Développeur Fullstack"
+			languageName = "Français"
+		[languages.ja]
+			title = "アルブレシュと・ケビン"
+			description="フルスタックエンジニア"
+			languageName = "日本語"
 	[permalinks]
 		posts= "/:section/:slug"
 		about="/:title"
