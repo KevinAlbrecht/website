@@ -19,7 +19,7 @@ summaryLength = 30
 			[[languages.en.menu.main]]
 				name = "About"
 		    	pre = "<i class='fa fa-user'></i>"
-				url = "/en/about"
+				url = "about"
   				weight = -9
 		[languages.fr]
 			title = "Kevin ALBRECHT"
@@ -35,7 +35,7 @@ summaryLength = 30
 			[[languages.fr.menu.main]]
 				name = "A propos"
 				pre = "<i class='fa fa-user'></i>"
-				url = "/en/about"
+				url = "about"
   				weight = -9
 		[languages.ja]
 			title = "アルブレシュと・ケビン"
@@ -51,7 +51,7 @@ summaryLength = 30
 			[[languages.ja.menu.main]]
 				name = "情報"
 				pre = "<i class='fa fa-user'></i>"
-				url = "/ja/about"
+				url = "about"
   				weight = -9
 	[permalinks]
 		posts= "/:section/:slug"
