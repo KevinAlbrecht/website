@@ -78,3 +78,12 @@ a.meta {
 .social {
     margin-top: 20px;
 }
+
+.languages {}
+
+.languages ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}

@@ -10,16 +10,18 @@
 				<span>
 					{{ with .Site.Params.description }} {{.}} {{end}}
 				</span>
+				{{if false}}
 				<span class="lead-second">
 					<a href='{{ .Site.Params.atlink }}' target="_blank">
 						{{ .Site.Params.at }}
 					</a>
 				</span>
+				{{end}}
 			</p>
 		</div>
 		{{ partial "sidebar_menu.html" . }}
-		{{ partial "sidebar_social.html" . }}
 		{{ partial "sidebar_languages.html" . }}
+		{{ partial "sidebar_social.html" . }}
 	</div>
 	<div class="sidebar-sticky sidebar-bottom">
 		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}

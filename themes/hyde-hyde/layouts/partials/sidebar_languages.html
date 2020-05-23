@@ -1,4 +1,4 @@
-<section class="row social text-center">
+<section class="row languages text-center">
 	<ul>
 		{{ $siteLanguages := .Site.Languages}}
 		{{ $pageLang := .Page.Lang}}
@@ -7,15 +7,11 @@
 		{{ range $siteLanguages }}
 		{{ if eq $translation.Lang .Lang }}
 		{{ $selected := false }}
-		{{ if eq $pageLang .Lang}}
 		<li>
-			<a href="{{ $translation.URL }}" class="active">{{ .LanguageName }}</a>
+			<a href="{{ $translation.URL }}" class="{{ if eq $pageLang .Lang}} active {{ end }}">
+				<img src="/icons/small_{{.Lang}}.jpg" />
+			</a>
 		</li>
-		{{ else }}
-		<li>
-			<a href="{{ $translation.URL }}">{{ .LanguageName }}</a>
-		</li>
-		{{ end }}
 		{{ end }}
 		{{ end }}
 		{{ end }}
