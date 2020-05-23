@@ -62,15 +62,6 @@ summaryLength = 30
 		at = "@Infinitesquare"
 		atlink = "https://infinitesquare.com/"
 		dateformat = "02/01/2006"
-	[[params.technos]]
-		preclass= "fab fa-angular"
-		title="Angular"
-	[[params.technos]]
-		preclass= "fab fa-windows"
-		title="Asp.net / Core"
-	[[params.technos]]
-		preclass= "fa fa-mobile-alt"
-		title="Cordova"
 	[params.niconico]
 		baseuri = "http://nicovideo.cdn.nimg.jp/web/img/base/head/icon/nico/"
 		ids = [
@@ -85,3 +76,4 @@ summaryLength = 30
 		github = "KevinALBRECHT"
 		linkedin = "albrechtkevin/"
 		email = "kevin.albrecht@outlook.fr"
+		stackoverflow="kevin-albrecht"

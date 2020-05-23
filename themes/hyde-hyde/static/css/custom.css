@@ -79,7 +79,10 @@ a.meta {
     margin-top: 20px;
 }
 
-.languages {}
+.languages {
+    width: 150px;
+    margin: auto;
+}
 
 .languages ul {
     list-style: none;
