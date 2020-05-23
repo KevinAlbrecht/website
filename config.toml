@@ -3,6 +3,7 @@ baseURL = "https://KevinALBRECHT.github.io/"
 theme = "hyde-hyde"
 googleAnalytics = "UA-118690818-1"
 disqusShortname = "kalbrecht-blog"
+summaryLength = 30
 	[languages]
 		[languages.en]
 			title = "Kevin ALBRECHT"
