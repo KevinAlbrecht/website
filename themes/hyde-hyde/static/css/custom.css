@@ -75,10 +75,9 @@ a.meta {
     text-align: center;
 }
 
-.social {
-    margin-top: 20px;
+section.row{
+	margin-top:20px;
 }
-
 .languages {
     width: 150px;
     margin: auto;
