@@ -1,0 +1,23 @@
+{
+	"name": "website",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"atomic-algolia": "^0.3.17"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"algolia": "atomic-algolia"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KevinAlbrecht/website.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/KevinAlbrecht/website/issues"
+	},
+	"homepage": "https://github.com/KevinAlbrecht/website#readme"
+}

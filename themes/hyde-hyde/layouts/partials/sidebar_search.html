@@ -1,0 +1,45 @@
+<!-- sidebar start -->
+<div>
+	<div id="searchbox"></div>
+	<div id="hits"></div>
+</div>
+
+<script>
+	const searchClient = algoliasearch('K2A268JMMV', '836ad357eb649d8e7c1c09b02319d354');
+	const placeholder = {{ if eq .Lang "en"}} 'Search' {{else if eq .Lang "fr" }} 'Recherche' {{else }} '検索' {{ end }};
+	const search = instantsearch({
+		indexName: 'blog',
+		searchClient,
+		numberLocale: {{ .Lang }},
+		searchFunction(helper){
+			console.log(helper);
+			if (helper.state.query) {
+				helper.search();
+			}
+		}
+	});
+
+	const hintsWidget = instantsearch.widgets.hits({
+		container: '#hits',
+		escapeHTML: true
+	});
+	const searchWidget = instantsearch.widgets.searchBox({
+		container: '#searchbox',
+		placeholder: placeholder,
+		searchAsYouType: false,
+		showReset: false,
+		showSubmit: false,
+		showLoadingIndicator: false,
+		queryHook: (q, s) => {
+			debugger;
+			return !!q ? s(q) : null
+		}
+	});
+	
+	search.addWidgets([
+		searchWidget,
+		hintsWidget		
+	]);
+
+	search.start();
+</script>

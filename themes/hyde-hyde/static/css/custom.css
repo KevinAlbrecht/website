@@ -90,3 +90,19 @@ a.meta {
     justify-content: space-evenly;
     padding: 0;
 }
+
+#searchbox {}
+
+#searchbox form.ais-SearchBox-form input.ais-SearchBox-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: inset 1px white;
+    background-image: url(/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 20px;
+}

@@ -1,2 +1,4 @@
 deploy.ps1
 public/
+node_modules
+.env

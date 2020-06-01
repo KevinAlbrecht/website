@@ -19,6 +19,7 @@
 				{{end}}
 			</p>
 		</div>
+		{{ partial "sidebar_search.html" . }}
 		{{ partial "sidebar_menu.html" . }}
 		{{ partial "sidebar_languages.html" . }}
 		{{ partial "sidebar_social.html" . }}
@@ -35,7 +36,6 @@
 </div>
 <script>
 	var el = document.getElementById("niconico");
-	console.log("el", el);
 	var baseUri = {{.Site.Params.niconico.baseuri }};
 	var extension = ".gif";
 	var list = {{.Site.Params.niconico.ids }};
